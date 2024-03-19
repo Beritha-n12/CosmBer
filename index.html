@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetic Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/logobuss.png" alt="Logo">
+    <h1>Welcome to our Cosmetic Products</h1>
+    <p>Discover the best cosmetic products for your beauty needs</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="home" class="container">
+    <h2>About Us</h2>
+    <div>
+      <p>We are dedicated to providing high-quality cosmetic products that enhance your beauty.</p>
+      <p>Our mission is to empower individuals by providing high-quality cosmetic products that <br> enhance their natural beauty. We believe everyone deserves to feel confident and beautiful <br>every day. Through our carefully curated selection, we strive to inspire self-expression and <br>confidence, helping individuals look and feel their best effortlessly.</p>
+    </div>
+  </div>
+  <div id="products" class="container">
+    <h2>Our Products</h2>
+    <div id="productList" class="product-list">
+    
+      <div class="product">
+        <img src="images/mustella.jpg" alt="Mutella">
+        <h3>Mustella baby lotion</h3>
+        <p>A luxurious face cream enriched with natural ingredients for ultimate hydration.</p>
+        <a href="https://www.amazon.com/Mustela-Hydra-Bebe-Body-Lotion/dp/B08RTKXZXF" target="_blank">More Info</a>
+      </div>
+      <div class="product">
+        <img src="images/cerave.jpg" alt="CeraVe Moisturizing Cream">
+        <h3>CeraVe Moisturizing Cream</h3>
+        <p>An ultra-hydrating cream that restores and maintains the skin's natural protective barrier.</p>
+        <a href="https://www.amazon.com/CeraVe-Moisturizing-Cream-Daily-Moisturizer/dp/B00TTD9BRC?ref_=ast_sto_dp&th=1&psc=1" target="_blank">More Info</a>
+      </div>
+      
+      <div class="product">
+        <img src="images/vanicream.jpg" alt="Vanicream Moisturizing Lotion">
+        <h3>Vanicream Moisturizing cream</h3>
+        <p>A gentle, non-greasy lotion suitable for sensitive skin, providing long-lasting hydration.</p>
+        <a href="https://www.amazon.com/Vanicream-Moisturizing-Sensitive-Irritated-Dermatologist/dp/B000NWGCZ2?ref_=ast_sto_dp&th=1&psc=1" target="_blank">More Info</a>
+      </div>
+    </div>
+  </div>
+  
+
+<div id="contact" class="container">
+    <h2>Leave message</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="responseMessage"></div>
+  </div>
+  
+  <footer>
+    <div>
+      <h3>Contact Us</h3>
+      <p>Email: nberitha78@gmail.com</p>
+      <p>Phone: +250784720984</p>
+      <p>Address: Kigali, Nyarugenge  Building.......</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
