@@ -1,0 +1,221 @@
+/* General styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: whitesmoke;
+    color: black;
+    text-align: left;
+    padding: 20px 0;
+  }
+  header img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 15px;
+  }
+  
+  header h1 {
+    color: darkblue;
+    margin: 15px
+  }
+  
+  header p {
+    color: lightseagreen;
+    margin: 20px;
+  }
+  
+  /* Navigation styles */
+  nav {
+    background-color: lightseagreen;
+    padding: 15px 0;
+    color: white;
+    position: fixed;
+    width: 55.26%;
+    margin-right: 50px;
+    margin: -30px;
+    align-items: normal;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    text-align: center;
+
+    display: inline-block;
+    padding: 0px;
+
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Container styles */
+  .container {
+    padding: 20px;
+  }
+  
+  /* About Us section styles */
+  #home {
+    background-color: lightgrey;
+    width : 50%;
+    text-align: center;
+  }
+
+  #home h2{
+    color: darkblue;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  #home p {
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;
+    margin :10px;
+  }
+  
+  /* Products section styles */
+  #products {
+    background-color: white;
+  }
+  
+  #products h2 {
+    color: darkblue;
+  }
+  
+  /* Product list styles */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust min and max width as needed */
+    grid-gap: 40px;
+    animation: backwards;
+    animation-duration: 5s;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+  
+  
+  .product img {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  .product h3 {
+    color: black;
+  }
+  
+  .product p {
+    color: #333;
+  }
+  
+  .product a {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+
+  /* Contact section styles */
+  /* Contact Section */
+#contact {
+  color: lightseagreen;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Contact Form Styling */
+#contactForm {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 20%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: darkorange;
+}
+
+/* Response Message */
+#responseMessage {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+  
+  /* Footer styles */
+  footer {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer h3 {
+    color: orange;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .product {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .product {
+      width: calc(100% - 20px);
+    }
+  }
+  
